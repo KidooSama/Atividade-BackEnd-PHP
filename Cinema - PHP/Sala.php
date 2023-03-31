@@ -2,7 +2,7 @@
 require_once "Cinema.php";
 
 class sala {
-  private $cad;
+  public $cad;
   public $cad_disp;
   public $num;
 

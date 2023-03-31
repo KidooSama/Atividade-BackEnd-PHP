@@ -5,9 +5,9 @@ require_once "Cliente.php";
 
 class Filme extends ingresso{
   public $nome;
-  private $temp;
-  private $gen;
-  private $dir;
+  public $temp;
+  public $gen;
+  public $dir;
 
   public function setName($nom){
     $this->nome = $nom;
