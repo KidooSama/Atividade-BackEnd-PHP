@@ -4,15 +4,30 @@ require_once "Sala.php";
 
 
 class ingresso extends sala{
-  public $preco;
-  
+  public $price;
+  protected $numCad;
+  protected $date;
 
-  public function setIng($preco){
-    $this->preco = $preco;
+  public function setNumCad($num){
+    $this->numCad = $num;
     
   }
-  public function getIng(){
-    return "\nIngresso\n".$this->preco;
+  public function setPrice($preco){
+    $this->price = $preco;
+    
+  }
+    public function setDate($date){
+    $this->date = $date;
+    
   }
 
+  public function getPrice(){
+    return "\n|Preço: ".$this->price;
+  }
+  public function getNumCad(){
+    return "\n|Numero da Poltrona: ".$this->numCad;
+  }
+  public function getDate(){
+    return "\n|Data: ".$this->date;
+  }
 }

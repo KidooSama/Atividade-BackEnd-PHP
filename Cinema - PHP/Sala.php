@@ -17,12 +17,12 @@ class sala {
   }
 
   public function getNum(){
-    return "\n".$this->num."\n";
+    return "\n|Número da Sala: ".$this->num;
   }
   public function getCad(){
-    return "\n".$this->cad."\n";
+    return "\n|Total de Cadeiras: ".$this->cad;
   }
   public function getCadDisp(){
-    return $this->cad_disp."\n";
+    return "\n|Cadeiras Disponíveis: ".$this->cad_disp."\n";
   }
 }
